@@ -1,0 +1,57 @@
+<div>
+  <h2>{{interpolation.toUpperCase()}}</h2>
+    <h3>Welcome {{name}}</h3>
+    <h3>{{2+2}}</h3>
+    <h3>{{"Welcome" + name}}</h3>
+    <h3>{{"Length of the name is " + name.length + "characters"}}</h3>
+    <h3>{{name.toUpperCase()}}</h3>
+    <h3>{{greetUser()}}</h3>
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{propertyBinding.toUpperCase()}}</h2>
+    <input [id]="myId" type="text" value="Enter">
+    <input [disabled]=isDisabled [id]="myId" type="text" value="Enter">
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{classBinding.toUpperCase()}}</h2>
+    <h3 class = "text-success">God of War</h3>
+    <h3 [class]="successClass">God of War</h3>
+    <h3 class="text-special" [class]="successClass">God of War</h3> <!-- the class binding ([class]) will overwrite the normal class thingy-->
+    <h3 [class.text-danger]="hasError">God of War</h3>
+    <h3 [ngClass]="messageClasses">God of War</h3>
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{styleBinding.toUpperCase()}}</h2>
+    <h3 [style.color]="'orange'">Witcher</h3>
+    <h3 [style.color]="hasError ? 'red' : 'green'">Witcher</h3> <!-- if hasError is true, then red. else green -->
+    <h3 [style.color]="highlightColor">Geralt of Rivia</h3>
+    <h3 [ngStyle]="titleStyles">Geralt of Rivia</h3>
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{eventBinding.toUpperCase()}}</h2>
+    <button (click)="onClick()">Click for boom</button>
+    <h3>{{boom.toUpperCase()}}</h3>
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{templateReferenceVariables.toUpperCase()}}</h2>
+    <input #myInput type="text">
+    <button (click)="logName(myInput.value)">Enter</button>
+    <h3>{{enteredName}}</h3>
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{twoWayBinding.toUpperCase()}}</h2>
+  <input [(ngModel)]="enteredText" type="text">
+  <h3>{{enteredText}}</h3>
+</div>
