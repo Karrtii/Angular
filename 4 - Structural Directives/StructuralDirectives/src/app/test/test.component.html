@@ -1,0 +1,53 @@
+<div>
+  <h2>{{ngIf}}</h2>
+  <!-- First way of doing ngIf-->
+  <!--  <h3 *ngIf="displayText">Super Saiyan</h3>
+    <h3>Frieza</h3>
+  -->
+
+  <!-- Second way of doing it with else statement as well -->
+  <!-- <h3 *ngIf="displayText; else elseBlock">Super Saiyan</h3>
+
+  <ng-template #elseBlock>
+    <h3>Frieza</h3>
+  </ng-template>
+  -->
+
+  <!-- Third way of doing it-->
+  <button (click)="switch()">Switcheroo</button>
+
+  <div *ngIf="displayText; then thenBlock; else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <h3 [style.color]="'green'">Goku</h3>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <h3 [style.color]="'red'">Frieza</h3>
+  </ng-template>
+
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{ngSwitch}}</h2>
+  <button [style.color]="'red'" (click)="onClickRed()">Red</button>
+  <button [style.color]="'green'" (click)="onClickGreen()">Green</button>
+  <button [style.color]="'blue'" (click)="onClickBlue()">Blue</button>
+
+  <div [ngSwitch]="color">
+    <h3 [style.color]="'red'" *ngSwitchCase="'red'">You clicked on Red</h3>
+    <h3 [style.color]="'green'" *ngSwitchCase="'green'">You clicked on Green</h3>
+    <h3 [style.color]="'blue'" *ngSwitchCase="'blue'">You clicked on Blue</h3>
+    <h3 *ngSwitchDefault>Click on the above buttons</h3>
+  </div>
+</div>
+<h3>---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{ngFor}}</h2>
+  <h3>Color | Index | First | Last | Odd | Even</h3>
+  <div *ngFor="let colors of colorArray; index as i; first as f; last as l; odd as o; even as e">
+    <h3>{{colors}} | {{i}} | {{f}} | {{l}} | {{o}} | {{e}}</h3>
+  </div>
+</div>

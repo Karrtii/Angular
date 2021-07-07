@@ -1,0 +1,5 @@
+Using your terminal, find the PID of port 4200
+netstat -ano | findstr :4200
+
+Kill task by the PID Number (Replace 15940)
+taskkill /PID 15940 /F
