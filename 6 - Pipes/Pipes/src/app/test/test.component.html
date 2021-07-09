@@ -1,0 +1,51 @@
+<div>
+  <h1>{{pipes.toUpperCase()}}</h1>
+</div>
+
+<div>
+  <h2>{{"Strings" | uppercase}}</h2>
+  <h3>{{roach}}</h3>
+  <h3>{{"Lowercase: " + roach | lowercase}}</h3>
+  <h3>{{"Uppercase: " + roach | uppercase}}</h3>
+  <h3>{{"Titlecase: " + message | titlecase}}</h3>
+  <h3>{{roach | slice:1:4}}</h3>
+  <h3>{{person | json}}</h3>
+</div>
+<h3 class="seperator">---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{"Numbers" | uppercase}}</h2>
+  <h3>{{5.678 | number:'1.2-3'}}</h3> <!-- digitsinfo: minimum number of integer digits, then minimum number of decimal digits, then maximum number of decimal digits -->
+  <h3>{{5.678 | number:'3.4-5'}}</h3>
+  <h3>{{5.678 | number:'4.1-2'}}</h3>
+</div>
+<h3 class="seperator">---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{"Percent" | uppercase}}</h2>
+  <h3>{{0.25 | percent}}</h3>
+  <h3>{{25 | percent}}</h3>
+</div>
+<h3 class="seperator">---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{"currency" | uppercase}}</h2>
+  <h3>{{0.25 | currency}}</h3>
+  <h3>{{0.25 | currency: 'GBP'}}</h3>
+  <h3>{{0.25 | currency: 'GPB': 'code'}}</h3>
+</div>
+<h3 class="seperator">---------------------------------------------------------------------------------</h3>
+
+<div>
+  <h2>{{"date" | uppercase}}</h2>
+  <h3>{{date}}</h3>
+  <h3>{{date | date:'short'}}</h3>
+  <h3>{{date | date:'shortDate'}}</h3>
+  <h3>{{date | date:'shortTime'}}</h3>
+  <h3>{{date | date:'medium'}}</h3>
+  <h3>{{date | date:'mediumDate'}}</h3>
+  <h3>{{date | date:'mediumTime'}}</h3>
+  <h3>{{date | date:'long'}}</h3>
+  <h3>{{date | date:'longDate'}}</h3>
+  <h3>{{date | date:'longTime'}}</h3>
+</div>
