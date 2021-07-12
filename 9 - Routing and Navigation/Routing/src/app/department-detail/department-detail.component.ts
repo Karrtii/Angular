@@ -24,19 +24,33 @@ export class DepartmentDetailComponent implements OnInit {
   goPrevious()
   {
     let previousId = this.departmentId - 1;
-    this.router.navigate(['/departments', previousId]);
+    this.router.navigate(['/departments', previousId]); //absolute path
+    this.router.navigate(['../', previousId], {relativeTo: this.route}); //relative path
+
   }
 
   goNext()
   {
     let nextId = this.departmentId + 1;
-    this.router.navigate(['/departments', nextId]);
+    //this.router.navigate(['/departments', nextId]); //absolute path
+    this.router.navigate(['../',  nextId], {relativeTo: this.route}); //relative path
   }
 
   goToDepartments()
   {
     let selectedId = this.departmentId ? this.departmentId : null;
-    this.router.navigate(['/departments', {id: selectedId, test: 'testValues'}]); //the test parameter is just to show that you can have more than one parameter
+    //this.router.navigate(['/departments', {id: selectedId, test: 'testValues'}]); //*absolute path* the test parameter is just to show that you can have more than one parameter
+    this.router.navigate(['../', {id: selectedId}], {relativeTo: this.route}); //relative path
+  }
+
+  showOverview()
+  {
+    this.router.navigate(['overview'], {relativeTo: this.route});
+  }
+
+  showContact()
+  {
+    this.router.navigate(['contact'], {relativeTo: this.route});
   }
 
 }

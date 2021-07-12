@@ -1,9 +1,17 @@
 <div>
 <h3>You selected department with id {{departmentId}}</h3>
-<button (click)="goPrevious()" style="margin:10px">Previous</button>
-<button (click)="goNext()">Next</button>
-</div>
+
+  <p>
+    <button (click)="showOverview()">Overview</button>
+    <button (click)="showContact()">Contact</button>
+  </p>
+
+  <router-outlet></router-outlet>
+  </div>
 
 <div>
+<button (click)="goPrevious()">Previous</button>
+<button (click)="goNext()">Next</button>
+  <p></p>
   <button (click)="goToDepartments()">Back</button>
 </div>
