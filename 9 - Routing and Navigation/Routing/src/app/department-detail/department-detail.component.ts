@@ -33,5 +33,10 @@ export class DepartmentDetailComponent implements OnInit {
     this.router.navigate(['/departments', nextId]);
   }
 
+  goToDepartments()
+  {
+    let selectedId = this.departmentId ? this.departmentId : null;
+    this.router.navigate(['/departments', {id: selectedId, test: 'testValues'}]); //the test parameter is just to show that you can have more than one parameter
+  }
 
 }
