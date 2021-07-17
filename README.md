@@ -260,7 +260,33 @@ Clicked on 'Arthur Morgan':<br/>
 Clicked on 'Kratos':<br/>
 ![image](https://user-images.githubusercontent.com/71009398/126042127-73a9d07e-f4ad-45f7-8584-fbfc1ac8b2af.png)<br/>
 Clicked on 'Geralt of Rivia':<br/>
-![image](https://user-images.githubusercontent.com/71009398/126042135-e2e0300a-5eba-4289-88e6-80367e01673b.png)
+![image](https://user-images.githubusercontent.com/71009398/126042135-e2e0300a-5eba-4289-88e6-80367e01673b.png)<br/>
+HTML:
+```
+<div>
+  <h2>{{componentInteraction.toUpperCase()}}</h2>
+  <h4>{{name}}</h4>
+  <button (click)="fireEventRdr2()">Arthur Morgan</button>
+  <button (click)="fireEventGow()">Kratos</button>
+  <button (click)="fireEventWitcher()">Geralt of Rivia</button>
+</div>
+```
+component.ts:
+```
+fireEventRdr2()
+  {
+    this.childEvent.emit("Red Dead Redemption 2");
+  }
+
+  fireEventGow() {
+    this.childEvent.emit("God of War");
+  }
+
+  fireEventWitcher()
+  {
+    this.childEvent.emit("Witcher 3: The Wild Hunt");
+  }
+  ```
 
 
 ## 6. Pipes <a name="pipes"></a>
