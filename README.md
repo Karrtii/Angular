@@ -16,6 +16,7 @@ Repository for Angular code while learning
   4.1 [ngIf](#ngIf)<br />
   4.2 [ngSwitch](#ngSwitch)<br />
   4.3 [ngFor](#ngFor)
+5. [Component Interaction](#componentInteraction)
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -80,7 +81,7 @@ Repository for Angular code while learning
 ![image](https://user-images.githubusercontent.com/71009398/126041984-9c5d3ebc-ddfa-48da-b029-2e2f7cf4cf63.png)
 
 
-
+## 5. Component Interaction <a name="componentInteraction"></a>
 
 
 
