@@ -57,29 +57,90 @@ component.ts:
 
 ### 3.2 Property Binding <a name="propertyBinding"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041300-7c8ce519-1a02-44c3-b5b4-96e1d2012935.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041345-874ad160-e485-46e7-bfda-0d21beb80e6d.png)
+HTML:
+```
+<div>
+  <h2>{{propertyBinding.toUpperCase()}}</h2>
+    <input [id]="myId" type="text" value="Enter">
+    <input [disabled]=isDisabled [id]="myId" type="text" value="Enter">
+</div>
+```
 
 ### 3.3 Class Binding <a name="classBinding"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041360-9aeed7a3-adcd-4880-9e8b-ef80ed3d40e3.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041371-732fc6f2-8b27-4116-8f3a-9e02e0a9ecb3.png)
+HTML:
+```
+<div>
+  <h2>{{classBinding.toUpperCase()}}</h2>
+    <h3 class = "text-success">God of War</h3>
+    <h3 [class]="successClass">God of War</h3>
+    <h3 class="text-special" [class]="successClass">God of War</h3> <!-- the class binding ([class]) will overwrite the normal class thingy-->
+    <h3 [class.text-danger]="hasError">God of War</h3>
+    <h3 [ngClass]="messageClasses">God of War</h3>
+</div>
+```
 
 ### 3.4 Style Binding <a name="styleBinding"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041392-aeabc1e9-fb76-4c6b-b594-12a4f55a407b.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041398-dea24c21-05ac-44d5-92fc-75fdaa0247b9.png)
+HTML:
+```
+<div>
+  <h2>{{styleBinding.toUpperCase()}}</h2>
+    <h3 [style.color]="'orange'">Witcher</h3>
+    <h3 [style.color]="hasError ? 'red' : 'green'">Witcher</h3> <!-- if hasError is true, then red. else green -->
+    <h3 [style.color]="highlightColor">Geralt of Rivia</h3>
+    <h3 [ngStyle]="titleStyles">Geralt of Rivia</h3>
+</div>
+```
 
 ### 3.5 Event Binding <a name="eventBinding"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041420-69ef8518-ab6c-4a0c-91f3-a297ba5d64b3.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041437-d29b9df7-f90c-47f4-9c54-87e2975bd1db.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041474-2ae53750-7f4d-464a-87b1-4fe6aec7fb95.png)
+HTML:
+```
+<div>
+  <h2>{{eventBinding.toUpperCase()}}</h2>
+    <button (click)="onClick()">Click for boom</button>
+    <h3>{{boom.toUpperCase()}}</h3>
+</div>
+```
+component.ts:
+```
+  onClick()
+  {
+    this.boom = "boom!"
+    return this.boom;
+  }
+  ```
 
 ### 3.6 Template Reference Variables <a name="templateReferenceVariables"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041503-9b914364-a6cb-4478-b33b-49ab8309452e.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041510-c0ab76c3-7e0c-4d79-9b27-41180dec1171.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041513-e85f38bf-fee8-4b73-a2c7-2b49f5d366c1.png)
+HTML:
+```
+<div>
+  <h2>{{templateReferenceVariables.toUpperCase()}}</h2>
+    <input #myInput type="text">
+    <button (click)="logName(myInput.value)">Enter</button>
+    <h3>{{enteredName}}</h3>
+</div>
+```
+component.ts:
+```
+  logName(value: any)
+  {
+    this.enteredName = value;
+  }
+  ```
 
 ### 3.7 Two-way Binding <a name="twoWayBinding"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041551-dcb1cb97-6a6a-4d16-a6b1-6c01913e8723.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041556-ca3a7cd6-2c50-4007-83ce-5f20af787125.png)
+HTML:
+```
+<div>
+  <h2>{{twoWayBinding.toUpperCase()}}</h2>
+  <input [(ngModel)]="enteredText" type="text">
+  <h3>{{enteredText}}</h3>
+</div>
+```
 
 
 ## 4. Structural Directives <a name="structuralDirectives"></a>
