@@ -4,7 +4,7 @@ Repository for Angular code while learning
 ## Table of Contents
 1. [Hello World](#hello-world)
 2. [Components](#components)
-3. [Binding])(#binding)
+3. [Binding](#binding)
     3.1 [Interpolation](#interpolation)
 
 ## 1. Hello World <a name="hello-world"></a>
