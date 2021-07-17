@@ -17,9 +17,9 @@ Repository for Angular code while learning
   4.2 [ngSwitch](#ngSwitch)<br />
   4.3 [ngFor](#ngFor)
 5. [Component Interaction](#componentInteraction)
-6. [Pipes](#pipes)
-  6.1 [String](#pipeString)
-  6.2 [Number](#pipeNumber)
+6. [Pipes](#pipes)<br />
+  6.1 [String](#pipeString)<br />
+  6.2 [Number](#pipeNumber)<br />
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -98,7 +98,16 @@ Clicked on 'Geralt of Rivia':<br/>
 
 ### 6.1 Strings <a name="pipeString"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126042232-ee3f2505-705f-4416-ac81-2e0985b93e3d.png)<br/>
-![image](https://user-images.githubusercontent.com/71009398/126042249-8934391f-fe2e-4b15-aedd-ce2013a10000.png)
+```<div>
+  <h2>{{"Strings" | uppercase}}</h2>
+  <h3>{{roach}}</h3>
+  <h3>{{"Lowercase: " + roach | lowercase}}</h3>
+  <h3>{{"Uppercase: " + roach | uppercase}}</h3>
+  <h3>{{"Titlecase: " + message | titlecase}}</h3>
+  <h3>{{roach | slice:1:4}}</h3>
+  <h3>{{person | json}}</h3>
+</div>
+```
 
 ### 6.2 Numbers <a name="pipeNumber"></a>
 
