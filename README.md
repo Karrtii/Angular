@@ -12,7 +12,8 @@ Repository for Angular code while learning
   3.5 [Event Binding](#eventBinding) <br />
   3.6 [Template Reference Variables](#templateReferenceVariables) <br />
   3.7 [Two-way Binding](#twoWayBinding)
-4. [Structural Directives](#structuralDirectives)
+4. [Structural Directives](#structuralDirectives)<br />
+  4.1 [ngIf](#ngIf)
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -56,6 +57,13 @@ Repository for Angular code while learning
 
 
 ## 4. Structural Directives <a name="structuralDirectives"></a>
+
+### 4.1 ngIf <a name="ngIf"></a>
+![image](https://user-images.githubusercontent.com/71009398/126041795-c98a202d-b258-4e23-9952-bd22ad5c988e.png)
+![image](https://user-images.githubusercontent.com/71009398/126041800-6bb45eb5-2a4f-4864-8e61-79b3f656d853.png)<br />
+![image](https://user-images.githubusercontent.com/71009398/126041814-fcaa15e3-4593-4045-81f8-155528b12d5a.png)<br />
+![image](https://user-images.githubusercontent.com/71009398/126041821-7c59ec5f-87c7-4ecb-adbf-f0ff4fd8b0d0.png)
+
 
 
 
