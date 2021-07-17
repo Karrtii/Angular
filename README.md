@@ -13,8 +13,8 @@ Repository for Angular code while learning
   3.6 [Template Reference Variables](#templateReferenceVariables) <br />
   3.7 [Two-way Binding](#twoWayBinding)
 4. [Structural Directives](#structuralDirectives)<br />
-  4.1 [ngIf](#ngIf)
-  4.2 [ngSwitch](#ngSwitch)
+  4.1 [ngIf](#ngIf)<br />
+  4.2 [ngSwitch](#ngSwitch)<br />
   4.3 [ngFor](#ngFor)
 
 
