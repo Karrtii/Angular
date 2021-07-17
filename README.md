@@ -17,6 +17,9 @@ Repository for Angular code while learning
   4.2 [ngSwitch](#ngSwitch)<br />
   4.3 [ngFor](#ngFor)
 5. [Component Interaction](#componentInteraction)
+6. [Pipes](#pipes)
+  6.1 [String](#pipeString)
+  6.2 [Number](#pipeNumber)
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -89,6 +92,35 @@ Clicked on 'Kratos':<br/>
 ![image](https://user-images.githubusercontent.com/71009398/126042127-73a9d07e-f4ad-45f7-8584-fbfc1ac8b2af.png)<br/>
 Clicked on 'Geralt of Rivia':<br/>
 ![image](https://user-images.githubusercontent.com/71009398/126042135-e2e0300a-5eba-4289-88e6-80367e01673b.png)
+
+
+## 6. Pipes <a name="pipes"></a>
+
+### 6.1 Strings <a name="pipeString"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042232-ee3f2505-705f-4416-ac81-2e0985b93e3d.png)<br/>
+![image](https://user-images.githubusercontent.com/71009398/126042249-8934391f-fe2e-4b15-aedd-ce2013a10000.png)
+
+### 6.2 Numbers <a name="pipeNumber"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
