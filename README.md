@@ -35,8 +35,25 @@ Repository for Angular code while learning
 
 ### 3.1 Interpolation <a name="interpolation"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041141-326f185f-d937-4f3f-999b-f9aa8766ffe7.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041333-430c15af-f08c-4373-8232-f8f71d89e5e4.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041466-6431539c-cfc2-4690-bec6-94f890d4a32e.png)
+HTML:
+```
+<div>
+  <h2>{{interpolation.toUpperCase()}}</h2>
+    <h3>Welcome {{name}}</h3>
+    <h3>{{2+2}}</h3>
+    <h3>{{"Welcome" + name}}</h3>
+    <h3>{{"Length of the name is " + name.length + "characters"}}</h3>
+    <h3>{{name.toUpperCase()}}</h3>
+    <h3>{{greetUser()}}</h3>
+</div>
+```
+component.ts:
+```
+ greetUser()
+  {
+    return "Hello " + this.name;
+  }
+  ```
 
 ### 3.2 Property Binding <a name="propertyBinding"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041300-7c8ce519-1a02-44c3-b5b4-96e1d2012935.png)<br />
