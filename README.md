@@ -5,7 +5,7 @@ Repository for Angular code while learning
 1. [Hello World](#hello-world)
 2. [Components](#components)
 
-## 1. Hello World
+## 1. Hello World <a name="hello-world"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126040930-20ca9599-bb9f-4552-b423-25e831226ed5.png)
 
-## 2. Components
+## 2. Components <a name="components"></a>
