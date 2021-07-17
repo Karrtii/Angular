@@ -20,6 +20,9 @@ Repository for Angular code while learning
 6. [Pipes](#pipes)<br />
   6.1 [String](#pipeString)<br />
   6.2 [Number](#pipeNumber)<br />
+  6.3 [Percent](#pipePercent)<br />
+  6.4 [Currency](#pipeCurrency)<br />
+  6.5 [Date](#pipeDate)
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -98,7 +101,8 @@ Clicked on 'Geralt of Rivia':<br/>
 
 ### 6.1 Strings <a name="pipeString"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126042232-ee3f2505-705f-4416-ac81-2e0985b93e3d.png)<br/>
-```<div>
+```
+<div>
   <h2>{{"Strings" | uppercase}}</h2>
   <h3>{{roach}}</h3>
   <h3>{{"Lowercase: " + roach | lowercase}}</h3>
@@ -110,8 +114,58 @@ Clicked on 'Geralt of Rivia':<br/>
 ```
 
 ### 6.2 Numbers <a name="pipeNumber"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042346-2532d570-3c62-4dc4-a1b5-cc7193762184.png)<br/>
+HTML:
+```
+<div>
+  <h2>{{"Numbers" | uppercase}}</h2>
+  <h3>{{5.678 | number:'1.2-3'}}</h3> <!-- digitsinfo: minimum number of integer digits, then minimum number of decimal digits, then maximum number of decimal digits -->
+  <h3>{{5.678 | number:'3.4-5'}}</h3>
+  <h3>{{5.678 | number:'4.1-2'}}</h3>
+</div>
+```
 
+### 6.3 Percent <a name="pipePercent"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042402-519c1e00-aec0-4f28-988c-8f93a389eb06.png)<br/>
+HTML:
+```
+<div>
+  <h2>{{"Percent" | uppercase}}</h2>
+  <h3>{{0.25 | percent}}</h3>
+  <h3>{{25 | percent}}</h3>
+</div>
+```
 
+### 6.4 Currency <a name="pipeCurrency"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042429-d138c33f-67a1-42c0-ae95-b3da38caceea.png)<br/>
+HTML:
+```
+<div>
+  <h2>{{"currency" | uppercase}}</h2>
+  <h3>{{0.25 | currency}}</h3>
+  <h3>{{0.25 | currency: 'GBP'}}</h3>
+  <h3>{{0.25 | currency: 'GPB': 'code'}}</h3>
+</div>
+```
+
+### 6.5 Date <a name="pipeDate"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042460-321efb00-a3f3-4a98-8618-24dc9a474119.png)<br/>
+HTML:
+```
+<div>
+  <h2>{{"date" | uppercase}}</h2>
+  <h3>{{date}}</h3>
+  <h3>{{date | date:'short'}}</h3>
+  <h3>{{date | date:'shortDate'}}</h3>
+  <h3>{{date | date:'shortTime'}}</h3>
+  <h3>{{date | date:'medium'}}</h3>
+  <h3>{{date | date:'mediumDate'}}</h3>
+  <h3>{{date | date:'mediumTime'}}</h3>
+  <h3>{{date | date:'long'}}</h3>
+  <h3>{{date | date:'longDate'}}</h3>
+  <h3>{{date | date:'longTime'}}</h3>
+</div>
+```
 
 
 
