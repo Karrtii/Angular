@@ -64,7 +64,11 @@ Repository for Angular code while learning
 ![image](https://user-images.githubusercontent.com/71009398/126041814-fcaa15e3-4593-4045-81f8-155528b12d5a.png)<br />
 ![image](https://user-images.githubusercontent.com/71009398/126041821-7c59ec5f-87c7-4ecb-adbf-f0ff4fd8b0d0.png)
 
-
+### 4.2 ngSwitch <a name="ngSwitch"></a>
+![image](https://user-images.githubusercontent.com/71009398/126041869-561055ac-d7ac-419b-95f8-47d5620003b9.png)
+![image](https://user-images.githubusercontent.com/71009398/126041873-eb1d6d50-bd0d-4add-9b38-41773b4d8136.png)
+![image](https://user-images.githubusercontent.com/71009398/126041875-9e0beee6-2a31-496a-bc3d-a30731efb5dd.png)
+![image](https://user-images.githubusercontent.com/71009398/126041879-340b2776-47bc-45e4-8455-19212074a5b5.png)<br />
 
 
 
