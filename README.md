@@ -5,13 +5,15 @@ Repository for Angular code while learning
 1. [Hello World](#hello-world)
 2. [Components](#components)
 3. [Binding](#binding) <br />
-3.1 [Interpolation](#interpolation) <br />
-3.2 [Property Binding](#propertyBinding) <br />
-3.3 [Class Binding](#classBinding) <br />
-3.4 [Style Binding](#styleBinding) <br />
-3.5 [Event Binding](#eventBinding) <br />
-3.6 [Template Reference Variables](#templateReferenceVariables) <br />
-3.7 [Two-way Binding](#twoWayBinding)
+  3.1 [Interpolation](#interpolation) <br />
+  3.2 [Property Binding](#propertyBinding) <br />
+  3.3 [Class Binding](#classBinding) <br />
+  3.4 [Style Binding](#styleBinding) <br />
+  3.5 [Event Binding](#eventBinding) <br />
+  3.6 [Template Reference Variables](#templateReferenceVariables) <br />
+  3.7 [Two-way Binding](#twoWayBinding)
+4. [Structural Directives](#structuralDirectives)
+
 
 ## 1. Hello World <a name="hello-world"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126040930-20ca9599-bb9f-4552-b423-25e831226ed5.png)
@@ -53,6 +55,7 @@ Repository for Angular code while learning
 ![image](https://user-images.githubusercontent.com/71009398/126041556-ca3a7cd6-2c50-4007-83ce-5f20af787125.png)
 
 
+## 4. Structural Directives <a name="structuralDirectives"></a>
 
 
 
