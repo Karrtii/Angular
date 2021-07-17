@@ -14,6 +14,8 @@ Repository for Angular code while learning
   3.7 [Two-way Binding](#twoWayBinding)
 4. [Structural Directives](#structuralDirectives)<br />
   4.1 [ngIf](#ngIf)
+  4.2 [ngSwitch](#ngSwitch)
+  4.3 [ngFor](#ngFor)
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -69,6 +71,15 @@ Repository for Angular code while learning
 ![image](https://user-images.githubusercontent.com/71009398/126041873-eb1d6d50-bd0d-4add-9b38-41773b4d8136.png)
 ![image](https://user-images.githubusercontent.com/71009398/126041875-9e0beee6-2a31-496a-bc3d-a30731efb5dd.png)
 ![image](https://user-images.githubusercontent.com/71009398/126041879-340b2776-47bc-45e4-8455-19212074a5b5.png)<br />
+![image](https://user-images.githubusercontent.com/71009398/126041920-e0320339-e311-478a-92ee-8536f4a0ff0e.png)<br />
+![image](https://user-images.githubusercontent.com/71009398/126041942-fe9fde98-d234-444e-b93c-00bf9c222114.png)
+
+### 4.3 ngFor <a name="ngFor"></a>
+![image](https://user-images.githubusercontent.com/71009398/126041959-d7cbbe3f-9591-4729-8972-dfb3fb12b830.png)<br />
+![image](https://user-images.githubusercontent.com/71009398/126041970-28b19869-284e-45c1-86ea-a3a0242a7ff3.png)<br />
+![image](https://user-images.githubusercontent.com/71009398/126041984-9c5d3ebc-ddfa-48da-b029-2e2f7cf4cf63.png)
+
+
 
 
 
