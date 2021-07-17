@@ -23,6 +23,9 @@ Repository for Angular code while learning
   6.3 [Percent](#pipePercent)<br />
   6.4 [Currency](#pipeCurrency)<br />
   6.5 [Date](#pipeDate)
+7. [Services](#services)
+8. [HTTP](#http)
+9. [Routing](#routing)
 
 
 ## 1. Hello World <a name="hello-world"></a>
@@ -359,8 +362,31 @@ HTML:
 </div>
 ```
 
+## 7. Services <a name="services"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042899-cbef1fb1-93e7-451d-b1aa-72626a350753.png)
 
 
+## 8. HTTP <a name="http"></a>
+Retrieved from a json file, but same logic applies for http requests as well. <br/>
+![image](https://user-images.githubusercontent.com/71009398/126042947-8321f2c5-1780-44dc-ac67-2cde219f2140.png)
+
+
+## 9. Routing <a name="routing"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042993-8ebb01e9-c11c-49b6-8ebb-87b467b13e02.png)<br/>
+Clicked on 'Employees': <br/>
+![image](https://user-images.githubusercontent.com/71009398/126043006-febe85ad-4da0-416d-9022-16e50ecc8d71.png)<br/>
+Clicked on 'Android':<br/>
+![image](https://user-images.githubusercontent.com/71009398/126043023-0d33ce1e-9f32-4166-9380-3d2de37c6e36.png)<br/>
+Clicked on 'Overview':<br/>
+![image](https://user-images.githubusercontent.com/71009398/126043034-e7b4c97a-c37b-453d-95d3-df8c0edda6c5.png)<br/>
+Clicked on 'Contact':<br/>
+![image](https://user-images.githubusercontent.com/71009398/126043049-ab06f682-07d6-423f-b26c-64f53c3050e0.png)<br/>
+Clicked on 'Next':<br/>
+![image](https://user-images.githubusercontent.com/71009398/126043058-21a7ba9a-a3a8-495d-be0c-a0de86a72510.png)<br/>
+Clicked on 'Previous':<br/>
+![image](https://user-images.githubusercontent.com/71009398/126043070-1dbdbb8c-3cc3-4f61-a31f-c1a4a39f9155.png)<br/>
+Clicked on 'Back':<br/>
+![image](https://user-images.githubusercontent.com/71009398/126043076-3073bebc-7beb-46fe-b5a3-721162d85ab6.png)
 
 
 
