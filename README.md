@@ -82,6 +82,15 @@ Repository for Angular code while learning
 
 
 ## 5. Component Interaction <a name="componentInteraction"></a>
+![image](https://user-images.githubusercontent.com/71009398/126042076-39f0aebe-f6be-4b13-9023-36801c347c6f.png)<br />
+Clicked on 'Arthur Morgan':
+![image](https://user-images.githubusercontent.com/71009398/126042104-bf5196ec-79f0-4d82-b4e4-3607e837ccc3.png)<br/>
+Clicked on 'Kratos':
+![image](https://user-images.githubusercontent.com/71009398/126042127-73a9d07e-f4ad-45f7-8584-fbfc1ac8b2af.png)<br/>
+Clicked on 'Geralt of Rivia':
+![image](https://user-images.githubusercontent.com/71009398/126042135-e2e0300a-5eba-4289-88e6-80367e01673b.png)
+
+
 
 
 
