@@ -148,21 +148,109 @@ HTML:
 ### 4.1 ngIf <a name="ngIf"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041795-c98a202d-b258-4e23-9952-bd22ad5c988e.png)
 ![image](https://user-images.githubusercontent.com/71009398/126041800-6bb45eb5-2a4f-4864-8e61-79b3f656d853.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041814-fcaa15e3-4593-4045-81f8-155528b12d5a.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041821-7c59ec5f-87c7-4ecb-adbf-f0ff4fd8b0d0.png)
+HTML:
+```
+<div>
+  <h2>{{ngIf}}</h2>
+  <!-- First way of doing ngIf-->
+  <!--  <h3 *ngIf="displayText">Super Saiyan</h3>
+    <h3>Frieza</h3>
+  -->
+
+  <!-- Second way of doing it with else statement as well -->
+  <!-- <h3 *ngIf="displayText; else elseBlock">Super Saiyan</h3>
+
+  <ng-template #elseBlock>
+    <h3>Frieza</h3>
+  </ng-template>
+  -->
+
+  <!-- Third way of doing it-->
+  <button (click)="switch()">Switcheroo</button>
+
+  <div *ngIf="displayText; then thenBlock; else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <h3 [style.color]="'green'">Goku</h3>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <h3 [style.color]="'red'">Frieza</h3>
+  </ng-template>
+
+</div>
+```
+component.ts:
+```
+switch()
+  {
+    if(this.displayText == true)
+    {
+      this.displayText = false;
+    }
+
+    else if(this.displayText == false)
+    {
+      this.displayText = true
+    }
+  }
+  ```
 
 ### 4.2 ngSwitch <a name="ngSwitch"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041869-561055ac-d7ac-419b-95f8-47d5620003b9.png)
 ![image](https://user-images.githubusercontent.com/71009398/126041873-eb1d6d50-bd0d-4add-9b38-41773b4d8136.png)
 ![image](https://user-images.githubusercontent.com/71009398/126041875-9e0beee6-2a31-496a-bc3d-a30731efb5dd.png)
 ![image](https://user-images.githubusercontent.com/71009398/126041879-340b2776-47bc-45e4-8455-19212074a5b5.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041920-e0320339-e311-478a-92ee-8536f4a0ff0e.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041942-fe9fde98-d234-444e-b93c-00bf9c222114.png)
+HTML:
+```
+<div>
+  <h2>{{ngSwitch}}</h2>
+  <button [style.color]="'red'" (click)="onClickRed()">Red</button>
+  <button [style.color]="'green'" (click)="onClickGreen()">Green</button>
+  <button [style.color]="'blue'" (click)="onClickBlue()">Blue</button>
+
+  <div [ngSwitch]="color">
+    <h3 [style.color]="'red'" *ngSwitchCase="'red'">You clicked on Red</h3>
+    <h3 [style.color]="'green'" *ngSwitchCase="'green'">You clicked on Green</h3>
+    <h3 [style.color]="'blue'" *ngSwitchCase="'blue'">You clicked on Blue</h3>
+    <h3 *ngSwitchDefault>Click on the above buttons</h3>
+  </div>
+</div>
+```
+component.ts:
+```
+onClickRed()
+  {
+    this.color = "red";
+  }
+  
+onClickGreen()
+  {
+    this.color = "green";
+  }
+  
+onClickBlue()
+  {
+    this.color = "blue";
+  }
+  ```
 
 ### 4.3 ngFor <a name="ngFor"></a>
 ![image](https://user-images.githubusercontent.com/71009398/126041959-d7cbbe3f-9591-4729-8972-dfb3fb12b830.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041970-28b19869-284e-45c1-86ea-a3a0242a7ff3.png)<br />
-![image](https://user-images.githubusercontent.com/71009398/126041984-9c5d3ebc-ddfa-48da-b029-2e2f7cf4cf63.png)
+HTML:
+```
+<div>
+  <h2>{{ngFor}}</h2>
+  <h3>Color | Index | First | Last | Odd | Even</h3>
+  <div *ngFor="let colors of colorArray; index as i; first as f; last as l; odd as o; even as e">
+    <h3>{{colors}} | {{i}} | {{f}} | {{l}} | {{o}} | {{e}}</h3>
+  </div>
+</div>
+```
+component.ts:
+```
+  public colorArray = ["red", "blue", "green"];
+```
 
 
 ## 5. Component Interaction <a name="componentInteraction"></a>
